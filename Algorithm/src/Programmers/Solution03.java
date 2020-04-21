@@ -4,16 +4,15 @@
 package Programmers;
 
 public class Solution03 {
-	  public String solution() {
-		  String[] seoul = new String[] {"Jane", "Kim"};
-	      String answer = "";
-	      String kim = "Kim";
-	      for(int i = 0; i<seoul.length ; i++){
-	          if(seoul[i].equals(kim)){
-	              answer="김서방은 "+i+"에 있다";
-	                  break;
-	          }
-	      }
-	      return answer;
-	  }
+	public static void main(String[] args) {
+		String[] arr = new String[] {"I","Song", "Joo", "Young"};
+		String song = "Song";
+		for(int i = 0; i<arr.length; i++) {
+			if(arr[i].equals(song)) {
+				System.out.println(i+"번째에 있다.");
+				break;
+			}
+		}
+	}
+	
 }
